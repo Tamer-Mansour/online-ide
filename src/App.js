@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import IDE from "./IDE";
+// import MyEditor from "./MyEditor";
 
-function App() {
+const App = () => {
+  // const handleCodeChange = (newCode) => {
+  //   console.log("Code changed:", newCode);
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <IDE/>
+      {/* <MyEditor /> */}
     </div>
   );
-}
+};
 
 export default App;
